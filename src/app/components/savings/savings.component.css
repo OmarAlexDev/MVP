@@ -1,0 +1,72 @@
+.container{
+    padding-top: 3%;
+    background-color: #FFBD9B!important;
+    border-radius: 10px!important;
+    box-sizing: border-box;
+    padding: 1%;
+    width: auto;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 1.5%;
+}
+.card{
+    border-radius: 15px!important;
+    background-color: white!important;
+    text-align: center;
+    transition: all 0.3s 0s ease-in;
+    color:#0A1D37;
+    
+}
+.s-title{
+    color: #0A1D37;
+    font-size: 4vh;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.s-title.quote{
+    text-align: center!important;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vh;
+}
+.row .col, .row .col-sm{
+    font-weight: 500;
+    font-size: 3.5vh;
+}
+.primary{
+    font-size: 5.5vh!important;
+}
+.secondary{
+    font-size: 5vh!important;
+    font-weight: 500;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+button{
+    border-radius: 10px!important;
+    padding: 1%;
+    background-color: #FFBD9B;
+    color: white;
+    outline: none;
+    border:none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+button:hover{
+    background-color: #0A1D37;
+    transform: scale(1.1) perspective(1px);
+    font-size: 103%;
+}
+input{
+    border-radius: 10px!important;
+    text-align: center;
+}
+::placeholder {
+    
+    opacity: 1;
+  }

@@ -1,0 +1,62 @@
+<div class="container shadow">
+    <div class="row">
+        <div class="col-s5">
+            <div class="s-title quote">
+                "There should be a place for everything, and everything in its place" <tr></tr>
+                 - Isabella Beeton"
+            </div>
+            <div class="s-title">
+                <span class="material-icons labelIcon">label_important</span>
+                Tasks
+            </div>
+            <div class="card shadow">
+                <div class="card-content">
+                    <div *ngFor="let value of values; let i = index">
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <input class="shadow-sm" type ="text" [(ngModel)]="value.name" placeholder="Product/Service/Person">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="shadow-sm" type ="number" [(ngModel)]="value.value" #name="ngModel" name="value{{i}}" placeholder="Cost">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button (click) = "removevalue(i)" style="width: 80px;">Remove</button>
+                        </div>
+                    </div> 
+                    <button (click)="addvalue()" >
+                        <span class="material-icons">add</span>
+                    </button>
+                    
+
+                </div>
+            </div>
+            <div class="s-title">
+                <span class="material-icons labelIcon">label_important</span>
+                Results
+            </div>
+            <div class="card col-lg-8 col-md-8 col-centered align-self-center shadow">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col">
+                            Total
+                            <div class="primary">{{getTotal()}}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            divided by
+                        </div>
+                        <div class="col-sm">
+                            <input type ="number" min="1" [(ngModel)]="numDiv" #name="ngModel" name="numDiv">
+
+                        </div>
+                        <div class="secondary">
+                             {{getDiv()}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

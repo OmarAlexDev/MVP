@@ -1,0 +1,18 @@
+nav{
+    background-color: #FFBD9B!important;
+    width: auto;
+}
+.navbar-brand{
+    padding-left: 2%;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+    font-size: 4vh;
+    color:#0A1D37;
+}
+.wrapper{
+    margin:2%;
+    border-radius: 10px!important;
+}
+.share{
+    color:#0A1D37;
+}
